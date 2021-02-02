@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  wow fadeInUp"  data-wow-duration="2s"-->
+<body>
+<!-- header_top-end -->
+<section class="banner_sec">
+	<div class="banner_heading">
+		<h1>Learn from the best. Design for the rest.</h1>
+		<p>The best in the field of design are here to give you all the tips, tricks and lessons you need to be successful.</p>
+		<a href="#"><span><i class="far fa-play-circle"></i></span> Watch the Film</a>
+	</div>
+</section><!-- banner_sec-end -->
+<section class="newsroom_sec">
+	<div class="container">
+		<div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+								<ngb-carousel>
+									<ng-template ngbSlide *ngFor="let news of newsList">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="newsroom_heading">
+											<h1>The Newsroom</h1>
+											<img [src]="news.newsImage" class="img-fluid">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="newsroom_slider_caption">
+										   <h1>{{news.newsTitle}}</h1>
+										  <p>{{news.newsText}}</p>
+										 <a href="#">Read more</a>
+									</div>
+								</div>
+							</div>
+									</ng-template>
+								  </ngb-carousel>
+								</div></div>
+</section><!-- newsroom_sec-end -->
+<section class="instructor_sec">
+	<div class="container">
+		<div class="instructor_sec_heading">
+			<h1>Meet your instructors</h1>
+		</div>
+		<div class="row" >
+			<div class="col-lg-3" *ngFor='let instructor of instructorList;let i=index' >
+				<div *ngIf='instructorSize >i '>
+				<div class="instructor_img_box">
+					
+					<img [src]="instructor.photo" class="img-fluid">
+					<h1>{{instructor.facultyName}}</h1>
+					<h2>{{instructor.specializationArea}}</h2>
+				</div>
+			</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn_view_all" *ngIF='isLoadMore' (click)="viewAllInst()">View all</button>
+		
+	</div>
+</section><!-- instructor_sec-end -->
+<section class="popular_classes">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6" >
+				<div class="popular_classes_heading">
+					<h1>Our Popular Classes</h1>
+					<img src="{{courseDetails.courseImage}}" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-6" >
+				<div class="fashion_styling_heading">
+					<h1>{{courseDetails.coursePurpose}}</h1>
+					<h2>{{courseDetails.courseTitle}}</h2>
+					<p> {{courseDetails.narration.slice(0, 200)}}
+						<span id="dot">...</span>
+						<span class="more" id="more">
+						{{courseDetails.narration.slice(30, 10000)}}</span> 
+						<a class="readmore" (click)="readmoreCourse()" id="myBtn">Read more</a>
+					</p>
+					<h3>Rs. {{courseDetails.courseFee}}</h3>
+					<div class="d-flex mt-5" >
+						<div>
+							<button type="button" class="btn btn_view_course">View Coursessss</button>
+						</div>
+						<div>
+							<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+		<!-- owl carousel -->
+
+			<div class="owl-carousel owl-theme owl-loaded popular_img_box_items">
+			    <div class="owl-stage-outer">
+			        <div class="owl-stage">
+					<carousel overflowCellsLimit='3'>
+						<div [loop]='false'  class="carousel-cell" *ngFor='let courses of courseList; let i=index'>
+							<img src="{{courses.courseImage}}"  (mouseout)="courseMouseOut(i)" (mouseover)="courseMouseOver(i)"> 
+							<div class="middle" id='mid' *ngIf='isCourse && courseIndex == i' >
+								<button type="button" class="btn btn_view_courses">View Course</button>
+								<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+						  </div>
+						</div>
+
+						
+						
+					</carousel>
+			            	
+			          
+			        </div>
+			    </div>
+			</div>
+	</div>
+</section><!-- popular_classes-end -->
+<section class="design_bundle_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="design_bundle_heading">
+					<h1>Design Bundles</h1>
+					<p>If your focus is on one specific segment of design, choose from our Design Bundles to get the most out of The Designer’s Class</p>
+					<img src="../../../../assets/img/bundle_img.png" class="img_bundle">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<button type="button" class="btn btn_view_all_bundle">View all bundles</button>
+				<div class="introduction_design_heading">
+					<h1>Introduction to Design</h1>
+					<h2>The Styling Bundle;  200 lessons; 5 hours</h2>
+					<ul>
+						<li>Fashion Foundation 1  (Rs 5000)</li>
+						<li>Fashion Fundamentals  (Rs. 5000)</li>
+						<li>Portfolio Design with Payal Singhal (Rs. 5000)</li>
+					</ul>
+					<div class="d-flex">
+						<!-- <strike>Rs. 30,000</strike> -->
+						<h3>Rs. 15,000</h3>
+					</div>
+					<button type="button" class="btn btn_bundle_save">Bundle & Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- design_bundle_sec-end -->
+<section class="way_to_learn_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="way_to_learn_heading">
+					<h1>A brand new way to learn</h1>
+					<p>Tune into your classes from your phone or your desktop and never miss out on any of the classes.</p>
+					<ul>
+						<li><span><img src="../../../../assets/img/leading.png" class="img_learn_icon"></span> Leading instructors</li>
+						<li><span><img src="../../../../assets/img/certified.png" class="img_learn_icon"></span> Certified courses</li>
+						<li><span><img src="../../../../assets/img/lessons.png" class="img_learn_icon_3"></span> 20-minute lessons</li>
+					</ul>
+					<button type="button" class="btn btn_get_started">Get Started</button>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img src="../../../../assets/img/learn_video.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section><!-- way_to_learn_sec-end -->
+<section class="app_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="app_sec_heading">
+					<h1>Download our app and get access to a free trial class!</h1>
+					<p>With our app, you can access The Designer’s Class from anywhere, at any time and learn everything there is to know about design.</p>
+					<div class="d-flex">
+						<a href="#"><img src="../../../../assets/img/playstore.png" class="img_btns"></a>
+						<a href="#"><img src="../../../../assets/img/appstrore.png" class="img_btns"></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img src="../../../../assets/img/app_sec_img.png" class="img_student_sec">
+			</div>
+		</div>
+	</div>
+</section><!-- app_sec-end -->
+<section class="student_sec">
+	<div class="container">
+		<div class="student_sec_heading">
+			<h1>What students are saying</h1>
+		</div>
+		<div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+			
+		<ngb-carousel>
+			<ng-template ngbSlide *ngFor="let comment of commentList">
+				<div class="row">
+					<div class="col-lg-6">
+						<img [src]="comment" class="img_student_sec">
+					</div>
+					<div class="col-lg-6">
+						<div class="student_slider_caption">
+							  <h1>Dev Patel</h1>
+							  <h2>Fashion Student</h2>
+							  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+						</div>      
+					</div>
+				</div>
+			</ng-template>
+		  </ngb-carousel>
+
+
+		</div>
+	</div>
+</section><!-- student_sec-end -->
+<section class="partner_sec">
+	<div class="container">
+		<div class="partner_sec_heading">
+			<h1>Our partners</h1>
+		</div>
+		<div class="partner_logo">
+			<ul>
+				<li>Logo</li>
+				<li>Logo</li>
+				<li>Logo</li>
+				<li>Logo</li>
+				<li>Logo</li>
+			</ul>
+		</div>
+	</div>
+</section><!-- partner_sec-end -->
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,155 @@
+
+/*start---css-bundele-kit*/
+.bundel-title {
+	font-family: 'sofia_promedium';
+    text-align: center;
+    font-size: 40px;
+    padding-top: 107px;
+}
+.cnt-kit {
+    margin: 0 auto;
+    width: 575px;
+    font-size: 20px;
+    padding-top: 16px;
+}
+.kit-space {
+    margin-top: 55px;
+}
+.darkgre-sevtion {
+    background-color: #191C21;
+    margin-top: 93px;
+    padding-bottom: 190px;
+}
+.padding-kit-127 {
+    padding-top: 127px;
+}
+.space-kit-157 {
+    margin-top: 157px;
+}
+.kits-heading {
+	font-family: 'sofia_promedium';
+    color: #fff;
+    font-size: 30px;
+}
+.kits-subheading {
+    color: #BABABA;
+    font-size: 20px;
+}
+.btn-outline-warning {
+    color: #F7C645;
+    border-color: #F7C645;
+    border-radius: 42px;
+    border: 2px solid;
+    font-size: 20px;
+    padding: 0.575rem 1.9rem;
+}
+.btn-outline-warning:hover {
+    color: #0e0e0e;
+    background-color: #F7C645;
+    border-color: #F7C645;
+}
+.list-kits {
+    margin-top: 70px;
+}
+.list-kits ul {
+    padding: 0 0 0 23px;
+    margin: 0;
+}
+.list-kits ul li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+}
+.kits-price {
+    padding-top: 70px;
+    font-size: 30px;
+}
+span.offerprice {
+    color: #BABABA;
+	text-decoration: line-through;
+}
+span.offerprice2 {
+    color: #fff;
+    padding-left: 20px;
+}
+button.bundelbtn {
+    width: 188px;
+    height: 50px;
+    background-color: #FFC408;
+    border-radius: 38px;
+    border: 1px solid #FFC408;
+    font-size: 20px;
+}
+.bundlebt-div {
+    margin-top: 60px;
+}
+.darkgre-sevtion-lack{
+	  background-color: #000000;
+    padding-bottom: 190px;
+}
+.padding-kit-227 {
+    padding-top: 227px;
+}
+.padding-kit-80 {
+	padding-top: 80px;
+}
+.kits-heading-inner {
+	 font-family: 'sofia_prosemibold';
+    color: #fff;
+    font-size: 25px;
+}
+.kits-subheadinginner{
+	color: #BABABA;
+    font-size: 18px;
+}
+.list-kitsinnr {
+    padding-top: 40px;
+}
+.list-kitsinnr p {
+    color: #BABABA;
+    font-size: 18px;
+}
+span.space-r {
+    padding-right: 40px;
+    padding-left: 38px;
+}
+.bundelbtn-outline {
+    color: #F7C645;
+    border-color: #F7C645;
+    border-radius: 42px;
+    border: 2px solid;
+    font-size: 20px;
+	width: 188px;
+	height: 50px;
+	background-color: transparent;
+}
+.kits-inner-fashion{
+	background-image: url(../../../../assets/img/fashion-kits-inner.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 923px;
+}
+.fashion-kits {
+    font-size: 20px;
+    padding-top: 37px;
+}
+ 
+.fashion-name {
+	font-family: 'sofia_promedium';
+    font-size: 40px;
+}
+.video-kits {
+    padding-top: 40px;
+}
+.kits-overview {
+    font-family: 'sofia_promedium';
+    font-size: 40px;
+    padding-top: 348px;
+}
+p.overvie-test {
+    font-size: 18px;
+    padding-top: 30px;
+}
+section.kitsinnerbootm {
+    margin-bottom: 300px;
+}

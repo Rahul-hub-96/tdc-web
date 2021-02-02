@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  wow fadeInUp"  data-wow-duration="2s"-->
+<body>
+
+<section class="course_overview_banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="d-flex align-items-center">
+					<div>
+						<img src="../../../../assets/img/course_overview_banner_img.png" class="img-fluid">
+					</div>
+					<div class="course_overview_banner_heading">
+						<h1>Tanya Ghavri</h1>
+						<h2 class="mb-4">Fashion styling & Marketing </h2>
+						<h2>Level: Beginner</h2>
+						<h2>2 hr 20 min  | 10 Assignments</h2>
+					</div>
+				</div>
+			</div>
+			<!-- id="navbar" -->
+			<div class="col-lg-6" >
+				<div class="course_main">
+					<div class="course_overview_banner_r_heading d-flex align-items-center">
+                        <!-- <strike>Rs. 5000</strike> -->
+                        <h3>Rs. 15,000</h3>
+						<h5>Rs. 3,500</h5>
+						<img src="../../../../assets/img/icon_overview_banner_1.png" class="img-fluid">
+						<img src="../../../../assets/img/icon_overview_banner_2.png" class="icon_overview_banner_2">
+					</div>
+					<div class="d-flex mt-5"  >
+						<button type="button" class="btn btn_buy_now">Buy Now</button>
+						<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="nav_tabs_sec" (scroll)="onWindowScroll($event);">
+	<div class="btns_bg" id='navbar'>
+		<button class="tablink tab "  [ngClass]="{'active': tabType == 'overview'}" (click)="openPage('overview')"><span>Overview</span></button>
+		<button class="tablink tab" [ngClass]="{'active': tabType == 'lesson'}" (click)="openPage('lesson')" ><span>Lesson Plan</span></button>
+		<button class="tablink tab"  [ngClass]="{'active': tabType == 'review'}" (click)="openPage('review')"><span>Reviews</span></button>
+		<div class="col-lg-7 d-flex justify-content-center">
+			<div class="course_main d-flex align-items-center"  id='buyNow'>
+				<div class="course_overview_banner_r_heading d-flex align-items-center">
+					<strike>Rs. 5000</strike>
+					<h5>Rs. 3,500</h5>
+				</div>
+				<div class="d-flex">
+					<button type="button" class="btn btn_buy_now">Buy Now</button>
+					<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="overview" class="tabcontent">
+	  <div class="overview_video_sec">
+	  	<div class="container pt-5">
+	  		<div class="row">
+	  			<div class="col-lg-6">
+	  				<div class="overview_left_video_sec">
+	  					<h1>{{courseDetails.courseTitle}}</h1>
+	  					<img [src]="courseDetails.courseImage" class="img-fluid mt-2 mb-2">
+	  					<h1><span><i class="fas fa-eye"></i></span> 3000 people  across India are watching this course</h1>
+	  				</div>
+	  			</div>
+	  			<div class="col-lg-6 d-flex align-items-center">
+	  				<div class="overview_right_video_sec">
+	  					<h1>Overview</h1>
+	  					<p>{{courseDetails.narration}} </p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div><!-- overview_video_sec-end -->
+	  <div class="what_will_you_learn_sec">
+	  	<div class="container">
+	  		<div class="what_will_you_learn_heading">
+	  			<h1>What will you learn?</h1>
+	  			<ul>
+	  				<li>+ An overview of styling profession</li>
+	  				<li>+ The role of a stylist</li>
+	  				<li>+ About the styling process</li>
+	  				<li>+ Fashion culture & art</li>
+	  				<li>+ Elements of design & visual harmony through imagery concepts</li>
+	  				<li>+ How to style for fashion content</li>
+	  				<li>+ Contemporary issues and fashion trends</li>
+	  			</ul>
+	  			<button type="button" class="btn btn_full_lesson_plan">See Full Lesson Plan</button>
+	  		</div>
+	  		<hr>
+	  		<div class="course_detail_sec">
+	  			<h1>Course Details</h1>
+	  			<div class="d-flex">
+	  				<ul>
+		  				<li>01. Introduction of the Tutor</li>
+
+		  				<li>02. Role of Stylist in Fashion Industry</li>
+		  				<li>03. Creative Collaboration</li>
+		  				<li>04. Creative Communication</li>
+		  				<li>05. Practical Styling</li>
+		  				<li>06. Understanding Fashion</li>
+		  			</ul>
+		  			<ul class="ml-5">
+		  				<li>01. Introduction of the Tutor</li>
+		  				<li>02. Role of Stylist in Fashion Industry</li>
+		  				<li>03. Creative Collaboration</li>
+		  				<li>04. Creative Communication</li>
+		  			</ul>
+	  			</div>
+	  			<button type="button" class="btn btn_full_lesson_plan">See Full Lesson Plan</button>
+	  		</div>
+	  		<div class="course_include_sec">
+	  			<div class="course_include_heading">
+	  				<h1>Course Includes</h1>
+	  				<div class="d-flex">
+		  				<ul>
+			  				<li><span><img src="../../../../assets/img/course_include_icon_1.png" class="img-fluid mr-2"></span> 53.5 hours on-demand videos</li>
+			  				<li><span><img src="../../../../assets/img/course_include_icon_2.png" class="img-fluid mr-2"></span> 110 articles</li>
+			  				<li><span><img src="../../../../assets/img/course_include_icon_3.png" class="img-fluid mr-2"></span> 20 downloadable resources</li>
+			  			</ul>
+			  			<ul class="ml-5">
+			  				<li><span><img src="../../../../assets/img/course_include_icon_4.png" class="img-fluid mr-2"></span> 9 month access</li>
+			  				<li><span><img src="../../../../assets/img/course_include_icon_5.png" class="img-fluid mr-2"></span> Access on mobile and TV</li>
+			  				<li><span><img src="../../../../assets/img/course_include_icon_6.png" class="img-fluid mr-2"></span> Certificate of completion</li>
+			  			</ul>
+		  			</div>
+	  			</div>
+	  		</div>
+	  		<div class="overview_review_sec">
+	  			<div class="overview_review_sec_heading">
+	  					<h1>Reviews</h1>
+	  				</div>
+	  			<div class="container">
+	  				<div class="row">
+	  					<div class="col-lg-7">
+	  						<div class="row">
+	  							<div class="col-lg-6 pl-0">
+	  								<div class="overview_review_box d-flex">
+	  									<h1>Overall</h1>
+	  									<h2>4.0</h2>
+	  									<div class="overview_five_star">
+											<ul>
+												<li><i class="fas fa-star"></i></li>
+												<li><i class="fas fa-star"></i></li>
+												<li><i class="fas fa-star"></i></li>
+												<li><i class="fas fa-star"></i></li>
+												<li><span><i class="fas fa-star"></i></span></li>
+											</ul>
+										</div>
+	  								</div>
+	  							</div>
+	  							<div class="col-lg-6 pl-0">
+	  								<div class="overview_review_box">
+	  									<h1>Expectations Met?</h1>
+	  									<div class="progress_bar_sec mt-5">
+	  										<h5>Absolutely</h5>
+		  									<div class="progress">
+											  <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+	  									</div>
+	  									<div class="progress_bar_sec">
+	  										<h5>Yes</h5>
+		  									<div class="progress">
+											  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+	  									</div>
+	  									<div class="progress_bar_sec">
+	  										<h5>Somewhat</h5>
+		  									<div class="progress">
+											  <div class="progress-bar" role="progressbar" style="width: 19%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+	  									</div>
+	  									<div class="progress_bar_sec">
+	  										<h5>Not Really</h5>
+		  									<div class="progress">
+											  <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+	  									</div>
+	  								</div>
+	  							</div>
+	  							<button type="button" class="btn btn_full_lesson_plan">See All Reviews</button>
+	  							<div class="review_bottom_box"></div>
+	  						</div>
+	  					</div>
+	  					<div class="col-lg-5 pt-5">
+	  						<div class="review_right_content_sec">
+	  							<img src="../../../../assets/img/lock.png" class="img-fluid">
+	  							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+	  							<ul>
+	  								<li><img src="../../../../assets/img/course_include_icon_2.png" class="img-fluid mr-2"> Fashion glossary</li>
+	  								<li><img src="../../../../assets/img/overview_icon_1.png" class="img-fluid mr-2"> Exercise</li>
+	  								<li><img src="../../../../assets/img/course_include_icon_1.png" class="img-fluid mr-2"> A day with Tanya Gawri</li>
+	  								<li><img src="../../../../assets/img/course_include_icon_2.png" class="img-fluid mr-2"> Take Away Points</li>
+	  							</ul>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div><!-- overview_review_sec-end -->
+	  	</div>
+	  	<div class="design_bundle_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="../../../../assets/img/bundle_img.png" class="img_bundle">
+					</div>
+					<div class="col-lg-6">
+						<div class="introduction_design_heading">
+							<h1 class="nomargin">Introduction to Design</h1>
+							<h2>The Styling Bundle;  200 lessons; 5 hours</h2>
+							<ul>
+								<li>Fashion Foundation 1  (Rs 5000)</li>
+								<li>Fashion Fundamentals  (Rs. 5000)</li>
+								<li>Portfolio Design with Payal Singhal (Rs. 5000)</li>
+							</ul>
+							<div class="d-flex">
+                                <!-- <strike>Rs. 30,000</strike> -->
+                                <h3>Rs. 30,000</h3>
+								<h3>Rs. 15,000</h3>
+							</div>
+							<button type="button" class="btn btn_bundle_save">Bundle & Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- design_bundle_sec-end -->
+		<div class="overview_other_classes_you_may_sec">
+			<div class="container">
+				<div class="overview_other_classes_heading">
+					<h1>Other Classes You May Like</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="main_box main_box_other_classes">
+							<div class="popular_img_box">
+			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
+								<h1>Anamika Khanna</h1>
+								<h2>Fashion Styling</h2>
+								<h3>Rs. 5000</h3>
+								<button type="button" class="btn btn_new">New</button>
+			            	</div>
+			            	<div class="middle">
+									<button type="button" class="btn btn_view_courses">View Course</button>
+									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+							  </div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="main_box main_box_other_classes">
+							<div class="popular_img_box">
+			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
+								<h1>Anamika Khanna</h1>
+								<h2>Fashion Styling</h2>
+								<h3>Rs. 5000</h3>
+								<button type="button" class="btn btn_new">New</button>
+			            	</div>
+			            	<div class="middle">
+									<button type="button" class="btn btn_view_courses">View Course</button>
+									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+							  </div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="main_box main_box_other_classes">
+							<div class="popular_img_box">
+			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
+								<h1>Anamika Khanna</h1>
+								<h2>Fashion Styling</h2>
+								<h3>Rs. 5000</h3>
+								<button type="button" class="btn btn_new">New</button>
+			            	</div>
+			            	<div class="middle">
+									<button type="button" class="btn btn_view_courses">View Course</button>
+									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+							  </div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="main_box main_box_other_classes">
+							<div class="popular_img_box">
+			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
+								<h1>Anamika Khanna</h1>
+								<h2>Fashion Styling</h2>
+								<h3>Rs. 5000</h3>
+								<button type="button" class="btn btn_new">New</button>
+			            	</div>
+			            	<div class="middle">
+									<button type="button" class="btn btn_view_courses">View Course</button>
+									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+	<div id="lesson" class="tabcontent">
+	   <div class="lesson_plan_sec">
+		<div class="d-flex w-100">
+			<div class="col-lg-5 sidebar_bg">
+				<div class="lesson_plan_heading">
+					<h1>Tanya Ghavri teaches Fashion Styling</h1>
+					<h2>Lesson Plan</h2>
+					<div class="lesson_sidebar">
+						<ul class="mt-5">
+							<li class="list_border" id='listBorder' *ngFor='let topic of topics; let i=index;'>
+								<a (click)='openlistview(i)' class="panel-heading collapsed d-flex align-items-center sidebartabs" data-toggle="collapse" data-target="#list_lesson">
+							    <img src="../../../../assets/img/list_circle.png" class="img_circle_lesson_list mr-2"> 
+							    <img src="../../../../assets/img/lock.png" class="img_lock_lesson_list mr-2"> <h6>{{i}} {{topic.topicName}}</h6>
+								<!-- <img src="../../../../assets/img/right_arrow.png" class="img_right_arrow"> -->
+								<i [ngClass]="{'right':!isLessonsOpen && i==lessonArrowIndex, 'down':isLessonsOpen  && i==lessonArrowIndex}"></i>
+							  </a>
+							  <div class="panel-body">
+							    <div class="collapse" id="list_lesson" [style.display]="isLessonsOpen && i==lessonArrowIndex? 'block' : 'none'">
+							<li class="list_border" id='listBorder' *ngFor='let ppt of topic.ppts; let j=index;'>
+								<ul class="pl-4 item_div"  >
+									  	<a (click)='getContentDetails(ppt)'><li class="d-flex align-items-center">
+											<input class="form-check-input" type="radio" [value]="true" >
+											 {{ppt.fileName}}</li></a>
+								  </ul>
+							</li>
+							<li class="list_border" id='listBorder' *ngFor='let pdf of topic.pdfs; let k=index;'>
+								<ul class="pl-4 item_div"  >
+									  	<a (click)='getContentDetails(pdf)'><li class="d-flex align-items-center">
+											<input class="form-check-input" type="radio" [value]="true" >
+											 {{pdf.fileName}}</li></a>
+								  </ul>
+							</li>
+							<li class="list_border" id='listBorder' *ngFor='let lecture of topic.lectures; let l=index;'>
+								<ul class="pl-4 item_div"  >
+									  	<a (click)='getContentDetails(lecture)'><li class="d-flex align-items-center">
+											<input class="form-check-input" type="radio" [value]="true" >
+											 {{lecture.fileName}}</li></a>
+								  </ul>
+							</li>
+							<li class="list_border" id='listBorder' *ngFor='let text of topic.texts; let j=index;'>
+								<ul class="pl-4 item_div" >
+									  	<a (click)='getContentDetails(text)' ><li class="d-flex align-items-center">
+											<input class="form-check-input" type="radio" [value]="true" >
+											 {{text.contentTitle}}</li></a>
+								  </ul>
+							</li>
+
+							    </div>
+							  </div>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 pl-5" *ngIf='isContentDetails'>
+				<div class="lesson_plan_right_heading">
+					<h1>{{contentDetails.fileName}}</h1>
+					<p></p>
+				
+					<!-- <img [src]="contentDetails.contentValue" class="img-fluid mb-5"> -->
+				</div> 
+				<button type="button" class="btn btn_full_lesson_plan">Mark As Complete</button>
+			</div>
+		</div>
+	</div><!-- lesson_plan_sec-end -->
+	<div class="design_bundle_sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="../../../../assets/img/bundle_img.png" class="img_bundle">
+				</div>
+				<div class="col-lg-6">
+					<div class="introduction_design_heading">
+						<h1 class="nomargin">Introduction to Design</h1>
+						<h2>The Styling Bundle;  200 lessons; 5 hours</h2>
+						<ul>
+							<li>Fashion Foundation 1  (Rs 5000)</li>
+							<li>Fashion Fundamentals  (Rs. 5000)</li>
+							<li>Portfolio Design with Payal Singhal (Rs. 5000)</li>
+						</ul>
+						<div class="d-flex">
+                            <!-- <strike>Rs. 30,000</strike> -->
+                            <h3>Rs. 30,000</h3>
+							<h3>Rs. 15,000</h3>
+						</div>
+						<button type="button" class="btn btn_bundle_save">Bundle & Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- design_bundle_sec-end -->
+	</div>
+
+	<div id="review" class="tabcontent">
+	  <div class="reviews_sec">
+	  	<div class="container">
+	  		<div class="reviews_sec_heading">
+	  			<h1>Tanya Ghavri teaches Fashion Styling</h1>
+	  			<h2>Reviews</h2>
+	  		</div>
+	  		<div class="reviews_sec_box ">
+	  			<div class="reviews_sec_box_inner d-flex">
+	  				<div class="d-flex" style="flex: 26%;">
+	  					<div>
+	  						<img src="../../../../assets/img/profile_pic.png" class="img-fluid">
+	  					</div>
+	  					<div class="reviews_sec_box_heading ml-3">
+	  						<h1>Dev Patel</h1>
+	  						<h2>Fashion Student</h2>
+	  					</div>
+	  				</div>
+	  				<div class="reviews_sec_heading_right" style="flex: 80%;">
+	  					<div class="five_star mr-3">
+							<ul>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+						<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h1>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+						<h2>Sept 10</h2>
+	  				</div>
+	  			</div>
+	  		</div><!-- reviews_sec_box-end -->
+	  		<div class="reviews_sec_box ">
+	  			<div class="reviews_sec_box_inner d-flex">
+	  				<div class="d-flex" style="flex: 26%;">
+	  					<div>
+	  						<img src="../../../../assets/img/profile_pic.png" class="img-fluid">
+	  					</div>
+	  					<div class="reviews_sec_box_heading ml-3">
+	  						<h1>Dev Patel</h1>
+	  						<h2>Fashion Student</h2>
+	  					</div>
+	  				</div>
+	  				<div class="reviews_sec_heading_right" style="flex: 80%;">
+	  					<div class="five_star mr-3">
+							<ul>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+						<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h1>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+						<h2>Sept 10</h2>
+	  				</div>
+	  			</div>
+	  		</div><!-- reviews_sec_box-end -->
+	  		<div class="reviews_sec_box ">
+	  			<div class="reviews_sec_box_inner d-flex">
+	  				<div class="d-flex" style="flex: 26%;">
+	  					<div>
+	  						<img src="../../../../assets/img/profile_pic.png" class="img-fluid">
+	  					</div>
+	  					<div class="reviews_sec_box_heading ml-3">
+	  						<h1>Dev Patel</h1>
+	  						<h2>Fashion Student</h2>
+	  					</div>
+	  				</div>
+	  				<div class="reviews_sec_heading_right" style="flex: 80%;">
+	  					<div class="five_star mr-3">
+							<ul>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+						<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h1>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+						<h2>Sept 10</h2>
+	  				</div>
+	  			</div>
+	  		</div><!-- reviews_sec_box-end -->
+	  		<div class="reviews_sec_box ">
+	  			<div class="reviews_sec_box_inner d-flex">
+	  				<div class="d-flex" style="flex: 26%;">
+	  					<div>
+	  						<img src="../../../../assets/img/profile_pic.png" class="img-fluid">
+	  					</div>
+	  					<div class="reviews_sec_box_heading ml-3">
+	  						<h1>Dev Patel</h1>
+	  						<h2>Fashion Student</h2>
+	  					</div>
+	  				</div>
+	  				<div class="reviews_sec_heading_right" style="flex: 80%;">
+	  					<div class="five_star mr-3">
+							<ul>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><i class="fas fa-star"></i></li>
+								<li><span><i class="fas fa-star"></i></span></li>
+							</ul>
+						</div>
+						<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h1>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
+						<h2>Sept 10</h2>
+	  				</div>
+	  			</div>
+	  		</div><!-- reviews_sec_box-end -->
+	  		<button type="button" class="btn btn_load_more_review_sec">Load More</button>
+	  		<div class="comment_box_sec">
+	  			<h1>Comments</h1>
+	  			<div class="form-floating">
+				  <textarea class="form-control form_control" placeholder="Sign in to Leave a comment" id="floatingTextarea"></textarea>
+				  <button type="button" class="btn btn_load_more_review_sec">Submit</button>
+				</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <section class="design_bundle_sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="../../../../assets/img/bundle_img.png" class="img_bundle">
+				</div>
+				<div class="col-lg-6">
+					<div class="introduction_design_heading">
+						<h1 class="nomargin">Introduction to Design</h1>
+						<h2>The Styling Bundle;  200 lessons; 5 hours</h2>
+						<ul>
+							<li>Fashion Foundation 1  (Rs 5000)</li>
+							<li>Fashion Fundamentals  (Rs. 5000)</li>
+							<li>Portfolio Design with Payal Singhal (Rs. 5000)</li>
+						</ul>
+						<div class="d-flex">
+                            <!-- <strike>Rs. 30,000</strike> -->
+                            <h3>Rs. 15,000</h3>
+							<h3>Rs. 15,000</h3>
+						</div>
+						<button type="button" class="btn btn_bundle_save">Bundle & Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- design_bundle_sec-end -->
+	</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade buy_new_modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Oops, you don't have access yet!</h3>
+		<p>In order to access this section you must purchase the course.</p>
+		<button Class="modal_buybtn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

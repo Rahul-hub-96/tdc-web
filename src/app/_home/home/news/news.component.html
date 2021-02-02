@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+
+<body>
+<main role="main" class="container">
+  <div class="row space-news122">
+    <div class="col-md-3"> 
+    <h3>
+    {{news.title}}
+    </h3> 
+      <p> {{news.newsText}} </p>
+     </div>
+      <div class="col-md-6"> <img class="img-fluid" src="../../../../assets/img/news-top.png"> </div>
+   <div class="col-md-3 border-news"> 
+   <div class="rightdiv-news2">
+    <h3>
+      {{news.title}}
+    </h3> 
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+   </div>
+   <div class="news-botomdiv">
+   <h3>
+   	UK Ratail Footfall Tumbled 43% in 2020
+    </h3> 
+      <p> Lorem Ipsum is simply dummy text of the printing and  typesetting industry. </p>
+   </div>
+   
+     </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-3" *ngFor='let newsRes of newsList'> 
+      <div class="news-botomdiv02 pt-div">
+        <img class="img-fluid" [src]="newsRes.image">
+    <h3>
+   {{newsRes.title}}
+    </h3> 
+    <p>{{newsRes.newsText.slice(0,100)}}
+      <span id="dots{{newsRes.newsId}}" *ngIf="newsRes.newsText.length > 100">...</span>
+      <span class="more" id="more{{newsRes.newsId}}">
+        {{newsRes.newsText.slice(100, 10000)}}</span>
+        <a class="readmore" (click)="myFunction(newsRes.newsId)" *ngIf="newsRes.newsText.length > 100" id="myBtn{{newsRes.newsId}}">Read more</a>
+    </p>
+   </div>
+    </div>
+     
+  </div>
+</main>
+
+</body>
+</html>

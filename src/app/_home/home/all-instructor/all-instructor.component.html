@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  wow fadeInUp"  data-wow-duration="2s"-->
+<body>
+<section class="all_instructor_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4" *ngFor='let instructor of instructorList;let i=index '>
+				<div *ngIf='instructorSize >i '>
+				<div class="instructor_img_content">
+					<img  [src]="instructor.photo" class="img_instructor_item" style="max-width: 55%">
+					<h1>{{instructor.facultyName}}</h1>
+					<button type="button" class="btn btn_follow">Follow</button>
+				</div></div>
+			</div>
+		
+		</div>
+		<button type="button" class="btn btn_load_more" *ngIf='isLoadMore' (click)='loadMore()'>Load More</button>
+	</div>
+	<div id="searchbar_2" class="collapsed">
+		<div id="search-box_2">
+		  <div id="sliding-panel-outer_2">       
+		   <div id="sliding-panel-inner_2">
+		   <input  id="search-input_2" (keydown.enter) ='searchByName()'  placeholder="Search"  [(ngModel)]='searchText' />
+		   </div><!--#sliding-panel-inner-->
+		  </div><!--#sliding-panel-outer-->
+		  
+		   <div class="search-label" (click)='openSearch()'>
+			 <i class="fa fa-search" ></i>
+		   </div>
+		</div><!--#search-box-->
+	 </div>
+</section><!-- all_instructor_sec-end -->
+<!-- <img src="../../../../assets/img/search_icon.png" class="img_search_icon"> -->
+
+<section class="instructor_app_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="../../../../assets/img/instructor_app_img.png" class="img-fluid">
+			</div>
+			<div class="col-lg-6">
+				<div class="instructor_app_sec_heading">
+					<h1>Download our app and get access to a free trial class!</h1>
+					<p>With our app, you can access The Designer’s Class from anywhere, at any time and learn everything there is to know about design.</p>
+					<div class="d-flex">
+						<a href="#"><img src="../../../../assets/img/playstore_black.png" class="img_app_black_btn mr-4"></a>
+						<a href="#"><img src="../../../../assets/img/app_store_black.png" class="img_app_black_btn"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- instructor_app_sec-end -->
+
+</body>
+
+</html>
+
+
+

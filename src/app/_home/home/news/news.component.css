@@ -1,0 +1,7 @@
+.readmore{
+    color: blue;
+    /* margin-left: 80%; */
+    cursor: pointer;
+    }
+    
+.more {display: none;}
