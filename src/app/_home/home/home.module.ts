@@ -17,11 +17,12 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { FormsModule } from '@angular/forms';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
-import { LoginComponent } from './login/login.component';
+import { BookmarkedBlogComponent } from './bookmarked-blog/bookmarked-blog.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [HomeComponent, NewsComponent, HomeHeaderComponent, HomeFooterComponent, BlogInnerComponent, BlogComponent, TdcHomeComponent, BundleKitComponent, 
-    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, LoginComponent
+    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, BookmarkedBlogComponent, NotificationsComponent
     ],
   imports: [
     CommonModule,

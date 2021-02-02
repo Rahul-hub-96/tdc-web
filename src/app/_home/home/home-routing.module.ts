@@ -3,13 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { AllInstructorComponent } from './all-instructor/all-instructor.component';
 import { BlogInnerComponent } from './blog-inner/blog-inner.component';
 import { BlogComponent } from './blog/blog.component';
+import { BookmarkedBlogComponent } from './bookmarked-blog/bookmarked-blog.component';
 import { BundleKitComponent } from './bundle-kit/bundle-kit.component';
 import { BundlesKitInnerComponent } from './bundles-kit-inner/bundles-kit-inner.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
 
 import { HomeComponent } from './home.component';
-import { LoginComponent } from './login/login.component';
 import { NewsComponent } from './news/news.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 import { TdcHomeComponent } from './tdc-home/tdc-home.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent , children:[
@@ -21,7 +22,8 @@ const routes: Routes = [{ path: '', component: HomeComponent , children:[
   { path: 'bundle_kit_inner', component: BundlesKitInnerComponent },
   { path: 'all_instructor', component: AllInstructorComponent },
   { path: 'course_overview', component: CourseOverviewComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'bookmarked_blog', component: BookmarkedBlogComponent },
+  { path: 'notifications', component: NotificationsComponent },
 ]
 
 }];
