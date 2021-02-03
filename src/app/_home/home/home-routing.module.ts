@@ -12,6 +12,7 @@ import { HomeComponent } from './home.component';
 import { MyClassesComponent } from './my-classes/my-classes.component';
 import { NewsComponent } from './news/news.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { PaymentComponent } from './payment/payment.component';
 import { TdcHomeComponent } from './tdc-home/tdc-home.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent , children:[
@@ -26,6 +27,7 @@ const routes: Routes = [{ path: '', component: HomeComponent , children:[
   { path: 'bookmarked_blog', component: BookmarkedBlogComponent },
   { path: 'notifications', component: NotificationsComponent },
   { path: 'my_courses', component: MyClassesComponent },
+  { path: 'payment', component: PaymentComponent },
 ]
 
 }];

@@ -20,10 +20,12 @@ import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { BookmarkedBlogComponent } from './bookmarked-blog/bookmarked-blog.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MyClassesComponent } from './my-classes/my-classes.component';
+import { PaymentComponent } from './payment/payment.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [HomeComponent, NewsComponent, HomeHeaderComponent, HomeFooterComponent, BlogInnerComponent, BlogComponent, TdcHomeComponent, BundleKitComponent, 
-    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, BookmarkedBlogComponent, NotificationsComponent, MyClassesComponent
+    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, BookmarkedBlogComponent, NotificationsComponent, MyClassesComponent, PaymentComponent, ProfileComponent
     ],
   imports: [
     CommonModule,
