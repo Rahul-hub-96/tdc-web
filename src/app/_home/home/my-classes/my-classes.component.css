@@ -1,0 +1,148 @@
+section.my-class {
+    background-color: #FFC408;
+	    height: 896px;
+	/*background-image: url(../img/gifting-pl.png);
+	background-position: right;
+	background-repeat: no-repeat;*/
+}
+h3.my-cal-title {
+    text-align: center;
+    font-size: 40px;
+	padding-top: 85px;
+}
+.my-clas-auto {
+    margin: 60px auto;
+    width: 782px;
+}
+.clas-course {
+    background-image: url(../../../../assets/img/round-texh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 225px;
+    height: 260px;
+    float: left;
+    margin-right: 30px;
+	    margin-bottom: 85px;
+}
+.num-cl {
+    color: #fff;
+    font-size: 60px;
+    padding-top: 36px;
+    text-align: center;
+}
+.class-box {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 auto;
+    width: 120px;
+}
+img.cl-bg {
+    position: absolute;
+    right: 0;
+}
+.pagelayout-frontpage .card.card-block {
+    overflow-x: hidden;
+}
+.pagelayout-frontpage .card.card-block {
+    min-height: inherit;
+    background: none;
+    padding: 0;
+    border: none;
+	
+}
+.theme-course-item {
+    border: none;
+    background: #fff;
+    position: relative;
+    padding-left: 697px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    height: 510px;
+    border-radius: 12px 0px 0px 12px;
+}
+.theme-course-item .course-thumb-holder.hasimage {
+    overflow: hidden;
+}
+.theme-course-item .course-thumb-holder {
+    background-color: #ffffff;
+    text-align: center;
+    position: absolute;
+   width: 664px;
+    height: 536px;
+    left: 0;
+    top: 0;
+}
+.theme-course-item .course-thumb {
+    max-width: 100%;
+    height: 510px;
+    text-align: center;
+}
+.theme-course-item .course-content-wrapper {
+    padding: 15px;
+    min-height: 140px;
+}
+.course-content {
+    margin-top: 0;
+}
+.theme-course-item .course-content-wrapper {
+    padding: 15px;
+    min-height: 140px;
+}
+.theme-course-item .course-title {
+	font-family: 'sofia_prosemibold';
+   font-size: 40px;
+    color: #212121;
+    max-width: 700px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	 padding-top: 20px;
+}
+.theme-course-item .course-summary {
+    font-size: 22px;
+    overflow: hidden;
+    line-height: 1.4;
+}
+.course-meta {
+    padding-top: 50px;
+}
+.theme-course-item .postlog {
+    padding-top: 50px;
+}
+ul.teachers {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+ul.teachers li i.fas.fa-star {
+    color: #E4E4E4;
+}
+.my-class-setion-room {
+    position: relative;
+    top: -294px;
+}
+.menu-pill .dropdown-toggle::after{
+	display: none;
+	
+}
+.menu-pill {
+    text-align: right;
+    font-size: 40px;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -17px;
+}
+.rght-2 {
+    text-align: right;
+}
+.mycl--sect h3 {
+    font-size: 40px;
+    color: #fff;
+}
+p.terms-condosion {
+    font-size: 14px;
+    text-align: center;
+    color: #707070;
+}

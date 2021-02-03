@@ -33,6 +33,19 @@ export class ApiServiceService {
     return this.http.get(this._getCourseDetails + '/' + courseId + '/contentDetails?userId=' + userId);
   }
 
+  saveContentUserTime(requestData){
+    return this.http.post(this._getCourseDetails + "/contentUserTime" , requestData);
+  }
   
+  markDone(requestData){
+    return this.http.post( this._baseUrl + 'faculty/captureStudentActivity',requestData); 
+  }
   
+  getStudentActivity(studentId, contentId){
+    return this.http.get( this._baseUrl + 'faculty/getStudentActivity/' + studentId + '/content/' + contentId);
+  }
+
+  otherCoursesByUserId(userId){
+    return this.http.get(this._getCourseDetails + "/others/" + userId );
+  }
 }

@@ -16,7 +16,7 @@
 						<h1>Tanya Ghavri</h1>
 						<h2 class="mb-4">Fashion styling & Marketing </h2>
 						<h2>Level: Beginner</h2>
-						<h2>2 hr 20 min  | 10 Assignments</h2>
+						<h2> &nbsp;  2 hr 20min  | 10 Assignments</h2>
 					</div>
 				</div>
 			</div>
@@ -25,8 +25,8 @@
 				<div class="course_main">
 					<div class="course_overview_banner_r_heading d-flex align-items-center">
                         <!-- <strike>Rs. 5000</strike> -->
-                        <h3>Rs. 15,000</h3>
-						<h5>Rs. 3,500</h5>
+                        <strike>Rs. {{courseFee}}</strike>
+							<h5>Rs. {{netPrice}}</h5>
 						<img src="../../../../assets/img/icon_overview_banner_1.png" class="img-fluid">
 						<img src="../../../../assets/img/icon_overview_banner_2.png" class="icon_overview_banner_2">
 					</div>
@@ -47,8 +47,8 @@
 		<div class="col-lg-7 d-flex justify-content-center">
 			<div class="course_main d-flex align-items-center"  id='buyNow'>
 				<div class="course_overview_banner_r_heading d-flex align-items-center">
-					<strike>Rs. 5000</strike>
-					<h5>Rs. 3,500</h5>
+					<strike>Rs. {{courseFee}}</strike>
+					<h5>Rs. {{netPrice}}</h5>
 				</div>
 				<div class="d-flex">
 					<button type="button" class="btn btn_buy_now">Buy Now</button>
@@ -91,29 +91,23 @@
 	  				<li>+ How to style for fashion content</li>
 	  				<li>+ Contemporary issues and fashion trends</li>
 	  			</ul>
-	  			<button type="button" class="btn btn_full_lesson_plan">See Full Lesson Plan</button>
+	  			<button type="button" class="btn btn_full_lesson_plan" >See Full Lesson Plan</button>
 	  		</div>
 	  		<hr>
 	  		<div class="course_detail_sec">
 	  			<h1>Course Details</h1>
 	  			<div class="d-flex">
-	  				<ul>
-		  				<li>01. Introduction of the Tutor</li>
-
-		  				<li>02. Role of Stylist in Fashion Industry</li>
-		  				<li>03. Creative Collaboration</li>
-		  				<li>04. Creative Communication</li>
-		  				<li>05. Practical Styling</li>
-		  				<li>06. Understanding Fashion</li>
+	  				<ul >
+		  				<li *ngFor='let topic of topics;let i=index'>{{i}} {{topic.topicName}}</li>
 		  			</ul>
-		  			<ul class="ml-5">
+		  			<!-- <ul class="ml-5">
 		  				<li>01. Introduction of the Tutor</li>
 		  				<li>02. Role of Stylist in Fashion Industry</li>
 		  				<li>03. Creative Collaboration</li>
 		  				<li>04. Creative Communication</li>
-		  			</ul>
+		  			</ul> -->
 	  			</div>
-	  			<button type="button" class="btn btn_full_lesson_plan">See Full Lesson Plan</button>
+	  			<button *ngIf='topics != null ' type="button" class="btn btn_full_lesson_plan"  (click)="openPage('lesson')" >See Full Lesson Plan</button>
 	  		</div>
 	  		<div class="course_include_sec">
 	  			<div class="course_include_heading">
@@ -236,13 +230,14 @@
 					<h1>Other Classes You May Like</h1>
 				</div>
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="col-lg-3" *ngFor='let othercourse of othercourseList; let i =index'>
+						<div *ngIf='i <=3'>
 						<div class="main_box main_box_other_classes">
 							<div class="popular_img_box">
-			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
-								<h1>Anamika Khanna</h1>
-								<h2>Fashion Styling</h2>
-								<h3>Rs. 5000</h3>
+			            		<img [src]="othercourse.courseImage" class="img-fluid">
+								<h1>{{othercourse.courseTitle}}</h1>
+								<h2>{{othercourse.coursePurpose.slice(0,20)}}</h2>
+								<h3>Rs. {{othercourse.courseFee}}</h3>
 								<button type="button" class="btn btn_new">New</button>
 			            	</div>
 			            	<div class="middle">
@@ -251,51 +246,10 @@
 							  </div>
 						</div>
 					</div>
-					<div class="col-lg-3">
-						<div class="main_box main_box_other_classes">
-							<div class="popular_img_box">
-			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
-								<h1>Anamika Khanna</h1>
-								<h2>Fashion Styling</h2>
-								<h3>Rs. 5000</h3>
-								<button type="button" class="btn btn_new">New</button>
-			            	</div>
-			            	<div class="middle">
-									<button type="button" class="btn btn_view_courses">View Course</button>
-									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
-							  </div>
-						</div>
 					</div>
-					<div class="col-lg-3">
-						<div class="main_box main_box_other_classes">
-							<div class="popular_img_box">
-			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
-								<h1>Anamika Khanna</h1>
-								<h2>Fashion Styling</h2>
-								<h3>Rs. 5000</h3>
-								<button type="button" class="btn btn_new">New</button>
-			            	</div>
-			            	<div class="middle">
-									<button type="button" class="btn btn_view_courses">View Course</button>
-									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
-							  </div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="main_box main_box_other_classes">
-							<div class="popular_img_box">
-			            		<img src="../../../../assets/img/p_img_1.png" class="img-fluid">
-								<h1>Anamika Khanna</h1>
-								<h2>Fashion Styling</h2>
-								<h3>Rs. 5000</h3>
-								<button type="button" class="btn btn_new">New</button>
-			            	</div>
-			            	<div class="middle">
-									<button type="button" class="btn btn_view_courses">View Course</button>
-									<button type="button" class="btn btn_add_to_cart">Add to Cart</button>
-							  </div>
-						</div>
-					</div>
+
+				
+					
 				</div>
 			</div>
 		</div>
@@ -313,35 +267,36 @@
 						<ul class="mt-5">
 							<li class="list_border" id='listBorder' *ngFor='let topic of topics; let i=index;'>
 								<a (click)='openlistview(i)' class="panel-heading collapsed d-flex align-items-center sidebartabs" data-toggle="collapse" data-target="#list_lesson">
-							    <img src="../../../../assets/img/list_circle.png" class="img_circle_lesson_list mr-2"> 
-							    <img src="../../../../assets/img/lock.png" class="img_lock_lesson_list mr-2"> <h6>{{i}} {{topic.topicName}}</h6>
+									<input *ngIf='isLessonsOpen && i==lessonArrowIndex' class="form-check-input" type="radio" [value]="true" >
+									<img src="../../../../assets/img/list_circle.png" class="img_circle_lesson_list mr-2"> 
+							    <img *ngIf =' i!=lessonArrowIndex' src="../../../../assets/img/lock.png" class="img_lock_lesson_list mr-2"> <h6>{{i}} {{topic.topicName}}</h6>
 								<!-- <img src="../../../../assets/img/right_arrow.png" class="img_right_arrow"> -->
 								<i [ngClass]="{'right':!isLessonsOpen && i==lessonArrowIndex, 'down':isLessonsOpen  && i==lessonArrowIndex}"></i>
 							  </a>
 							  <div class="panel-body">
 							    <div class="collapse" id="list_lesson" [style.display]="isLessonsOpen && i==lessonArrowIndex? 'block' : 'none'">
-							<li class="list_border" id='listBorder' *ngFor='let ppt of topic.ppts; let j=index;'>
+							<li  id='listBorder' *ngFor='let ppt of topic.ppts; let j=index;'>
 								<ul class="pl-4 item_div"  >
 									  	<a (click)='getContentDetails(ppt)'><li class="d-flex align-items-center">
 											<input class="form-check-input" type="radio" [value]="true" >
 											 {{ppt.fileName}}</li></a>
 								  </ul>
 							</li>
-							<li class="list_border" id='listBorder' *ngFor='let pdf of topic.pdfs; let k=index;'>
+							<li  id='listBorder' *ngFor='let pdf of topic.pdfs; let k=index;'>
 								<ul class="pl-4 item_div"  >
 									  	<a (click)='getContentDetails(pdf)'><li class="d-flex align-items-center">
 											<input class="form-check-input" type="radio" [value]="true" >
 											 {{pdf.fileName}}</li></a>
 								  </ul>
 							</li>
-							<li class="list_border" id='listBorder' *ngFor='let lecture of topic.lectures; let l=index;'>
+							<li  id='listBorder' *ngFor='let lecture of topic.lectures; let l=index;'>
 								<ul class="pl-4 item_div"  >
 									  	<a (click)='getContentDetails(lecture)'><li class="d-flex align-items-center">
 											<input class="form-check-input" type="radio" [value]="true" >
 											 {{lecture.fileName}}</li></a>
 								  </ul>
 							</li>
-							<li class="list_border" id='listBorder' *ngFor='let text of topic.texts; let j=index;'>
+							<li id='listBorder' *ngFor='let text of topic.texts; let j=index;'>
 								<ul class="pl-4 item_div" >
 									  	<a (click)='getContentDetails(text)' ><li class="d-flex align-items-center">
 											<input class="form-check-input" type="radio" [value]="true" >
@@ -362,10 +317,20 @@
 				<div class="lesson_plan_right_heading">
 					<h1>{{contentDetails.fileName}}</h1>
 					<p></p>
-				
+					<div *ngIf="contentDetails.contentType !='Videos' " style="width: 740px; height: 480px; position: relative;" > 
+						<iframe  [src]="transferPPT(contentDetails.contentValue)"   width="740" height="480" frameborder="0" scrolling="no" seamless="" appBlockCopyCutPase ></iframe>
+						<div style="width: 80px; height: 80px; position: absolute; opacity: 0; right: 0px; top: 0px;">&nbsp;</div>
+				   </div>
+<div *ngIf="contentDetails.contentType =='Videos' ">
+				   <video (pause)="pauseVideo($event, contentDetails.contentId)" (play)="play($event)" (timeupdate)="onTimeUpdate($event)"
+				   title="{{contentDetails.fileName}}" src="{{contentDetails.contentValue}}"  type="video/mp4"
+				   controlsList="nodownload" controls width="100%"  oncontextmenu="return false;">
+				 </video>
+				</div>
 					<!-- <img [src]="contentDetails.contentValue" class="img-fluid mb-5"> -->
 				</div> 
-				<button type="button" class="btn btn_full_lesson_plan">Mark As Complete</button>
+				<button type="button" class="btn btn_full_lesson_plan" (click)='isMarkDone(contentDetails.contentId)'>Mark As Complete</button>
+				<span class="mdc-button__label"  *ngIf="isPaid == 'true'  && activityDateTime != null">Mark done : {{activityDateTime}}</span> 
 			</div>
 		</div>
 	</div><!-- lesson_plan_sec-end -->

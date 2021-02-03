@@ -312,7 +312,7 @@ button:focus {
 .lesson_sidebar ul .item_div {
     position:relative;
 }
-.lesson_sidebar ul .item_div:before {
+/* .lesson_sidebar ul .item_div:before {
    position: absolute;
     content: " ";
         border: 1px dotted #111;
@@ -321,7 +321,8 @@ button:focus {
     left: 33px;
     right: 0;
     top: 10px;
-}
+} */
+
 .lesson_sidebar ul .item_div img {
     z-index:1;
 }

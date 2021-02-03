@@ -19,10 +19,11 @@ import { CourseOverviewComponent } from './course-overview/course-overview.compo
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { BookmarkedBlogComponent } from './bookmarked-blog/bookmarked-blog.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { MyClassesComponent } from './my-classes/my-classes.component';
 
 @NgModule({
   declarations: [HomeComponent, NewsComponent, HomeHeaderComponent, HomeFooterComponent, BlogInnerComponent, BlogComponent, TdcHomeComponent, BundleKitComponent, 
-    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, BookmarkedBlogComponent, NotificationsComponent
+    BundlesKitInnerComponent, AllInstructorComponent, CourseOverviewComponent, BookmarkedBlogComponent, NotificationsComponent, MyClassesComponent
     ],
   imports: [
     CommonModule,

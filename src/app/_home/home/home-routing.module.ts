@@ -9,6 +9,7 @@ import { BundlesKitInnerComponent } from './bundles-kit-inner/bundles-kit-inner.
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
 
 import { HomeComponent } from './home.component';
+import { MyClassesComponent } from './my-classes/my-classes.component';
 import { NewsComponent } from './news/news.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { TdcHomeComponent } from './tdc-home/tdc-home.component';
@@ -24,6 +25,7 @@ const routes: Routes = [{ path: '', component: HomeComponent , children:[
   { path: 'course_overview', component: CourseOverviewComponent },
   { path: 'bookmarked_blog', component: BookmarkedBlogComponent },
   { path: 'notifications', component: NotificationsComponent },
+  { path: 'my_courses', component: MyClassesComponent },
 ]
 
 }];
