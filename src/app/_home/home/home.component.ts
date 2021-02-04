@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   isHide=false;
   ngOnInit(): void {
-    if(this.router.url  == '/payment'){
+    if(this.router.url  == '/payment' || this.router.url  == '/profile_view'){
       this.isHide = true
     }
   }

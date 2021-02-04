@@ -13,7 +13,10 @@ import { MyClassesComponent } from './my-classes/my-classes.component';
 import { NewsComponent } from './news/news.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SavedCoursesComponent } from './saved-courses/saved-courses.component';
 import { TdcHomeComponent } from './tdc-home/tdc-home.component';
+import { WelcomeCheckoutComponent } from './welcome-checkout/welcome-checkout.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent , children:[
   {path: '', component: TdcHomeComponent},
@@ -28,6 +31,9 @@ const routes: Routes = [{ path: '', component: HomeComponent , children:[
   { path: 'notifications', component: NotificationsComponent },
   { path: 'my_courses', component: MyClassesComponent },
   { path: 'payment', component: PaymentComponent },
+  { path: 'profile_view', component: ProfileComponent },
+  { path: 'saved_courses', component: SavedCoursesComponent },
+  { path: 'welcome_checkout', component: WelcomeCheckoutComponent },
 ]
 
 }];
